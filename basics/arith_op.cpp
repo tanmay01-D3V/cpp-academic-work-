@@ -4,7 +4,7 @@ int main()
 {
     int a,b;
 
-    cout << "Enter two numbers: " << endl;
+    cout << "Enter two numbers " << endl;
     cin>>a>>b;
 
     cout << "Addition: a + b = " << a + b << endl;
