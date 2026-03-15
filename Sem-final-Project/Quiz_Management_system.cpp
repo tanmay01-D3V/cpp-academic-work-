@@ -44,6 +44,14 @@ void startQuiz()
         }
         cout << "Enter your answer (A/B/C/D): ";
         cin >> userAnswer;
+        do{
+            if (userAnswer != 'A' && userAnswer != 'B' && userAnswer != 'C' && userAnswer != 'D' && userAnswer != 'a' && userAnswer != 'b' && userAnswer != 'c' && userAnswer != 'd')
+            {
+                cout << "Invalid option. Please enter A, B, C, or D.\n";
+                cout << "Enter your answer (A/B/C/D): ";
+                cin >> userAnswer;
+            }
+        }while (userAnswer != 'A' && userAnswer != 'B' && userAnswer != 'C' && userAnswer != 'D' && userAnswer != 'a' && userAnswer != 'b' && userAnswer != 'c' && userAnswer != 'd');
 
         if (toupper(userAnswer) == correctAnswers[i])
         {
@@ -64,6 +72,22 @@ void startQuiz()
 void viewscore()
 {
     cout << "\nYour current score is: " << score << "/" << totalQuestions << endl;
+    if (score >= 4)
+    {
+        cout << "Performance: Excellent";
+    }
+    else if (score == 3)
+    {
+        cout << "Performance: Good";
+    }
+    else if (score == 2)
+    {
+        cout << "Performance: Average";
+    }
+    else
+    {
+        cout << "Performance: Needs Improvement";
+    }
 }
 
 int main()
