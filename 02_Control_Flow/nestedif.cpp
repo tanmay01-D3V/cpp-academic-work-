@@ -23,7 +23,7 @@ int main()
     }
     else 
     {
-        cout<<"The number is negative but your live is positive"<<endl;
+        cout<<"The number is negative"<<endl;
     }
     return 0;
 }

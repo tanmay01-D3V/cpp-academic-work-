@@ -1,14 +1,14 @@
-#include<iostream>
+// Program to demonstrate continue statement
+#include <iostream>
 using namespace std;
-int main()
-{
-    int i;
-    for (i=0;i<=10;i++)
-    {
-        if (i==5){
-            continue;
+
+int main() {
+    for (int i = 1; i <= 5; i++)
+     {
+        if (i == 3) {
+            continue;   // skip this iteration
         }
-        cout<<i<<endl;
+        cout << i << " ";
     }
     return 0;
 }

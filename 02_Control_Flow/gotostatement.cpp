@@ -4,7 +4,7 @@ int main()
 {
     int i = 1;
 start:
-    cout << i <<" ";
+    cout << i <<",";
     i++;
 
     if (i<=10)

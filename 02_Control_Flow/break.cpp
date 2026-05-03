@@ -1,13 +1,16 @@
-#include <iostream>
+
+// C++ program to use break statement to break the loop when i become 3
+#include <iostream> 
 using namespace std;
-int main()
+int main() {
+for (int i = 0; i < 5; i++)
 {
-    int n;
-    for (int n=0; n < 100; n++)
-    {
-        cout << n << endl;
-        if (n == 10)
-            break;
-    }
-    return 0;
+// if i become 3 then break the loop and move to // next statement out of loop
+if (i == 3) 
+{
+break; 
+}
+cout << i << endl;
+ }
+return 0; 
 }
